@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/cart",
+    "/dairy",
+    "/events",
+    "/fruits",
+    "/home",
+    "/login",
+    "/register",
+    "/special",
+    "/vegies"
+  ]
+}

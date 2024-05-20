@@ -1,0 +1,139 @@
+/* .custom-shape-divider-top-1702889535 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-top-1702889535 svg {
+    position: relative;
+    display: block;
+    width: calc(111% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-top-1702889535 .shape-fill {
+    fill: violet;
+} */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+/*
+.toggler-icon , button{
+  color: blueviolet;
+  background-color: rgb(48, 46, 46);
+  /*display: flex;
+  align-items: end;
+  justify-content: center;
+  left: 0;
+  display: flex;/*
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  /* .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   */
+
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+h1 {
+  font-size: 250%
+}
+
+p {
+ font-size: 140%;
+ line-height: 150%;
+ color: #333;
+}
+
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+/* #title {
+  background-image: url("https://picsum.photos/640/480");
+  z-index:2;
+}
+
+#title h1 {
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 50% 100%;
+
+ } */
+ /* img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+} */
+/* #title {
+  background-image: url("/src/assets/seedproject/4.png");
+  z-index:-1;
+}
+#slide1:before {
+  background-image: url("/src/assets/seedproject/5.png");
+  transform: translateZ(-1px) scale(2);
+}
+#slide2 {
+  background-image: url("/src/assets/seedproject/2.jpg");
+  z-index:2;
+}
+#slide3:before {
+  background-image: url("/src/assets/seedproject/2.jpg");
+  transform: translateZ(-1px) scale(2);
+} */
+
+#credits {
+  background: #222;
+}
+

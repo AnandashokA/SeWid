@@ -1,0 +1,169 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "notes-portal": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/notes-portal",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+
+              "src/assets/seedproject/1.png",
+
+              "src/assets/seedproject/2.jpg",
+              "src/assets/seedproject/3.jpg",
+              "src/assets/seedproject/4.png",
+              "src/assets/seedproject/5.png",
+              "src/assets/seeds/seasame.jpg",
+              "src/assets/seeds/pumpkin.jpg",
+              "src/assets/seeds/grape-seeds.jpeg",
+              "src/assets/seeds/pomg.jpg",
+              "src/assets/seeds/flax.jpg",
+              "src/assets/seeds/caraway-seed.jpg",
+              "src/assets/seeds/apricot.jpg",
+              "src/assets/seeds/homepageBG.jpg",
+              "src/assets/seeds/sabja.jpg",
+              "src/assets/seeds/rajgira.jpeg",
+              "src/assets/seeds/blackpepper.jpeg",
+              "src/assets/seeds/sunflower.jpeg",
+              "src/assets/seeds/fig.jpeg",
+
+              "src/assets/fruits/buddhas-hand.jpg",
+              "src/assets/fruits/cherimoya.jpeg",
+              "src/assets/fruits/dragon.jpeg",
+              "src/assets/fruits/durian.jpg",
+              "src/assets/fruits/kiwano.jpg",
+              "src/assets/fruits/kumquat.jpeg",
+              "src/assets/fruits/lychee.webp",
+              "src/assets/fruits/mangosteen.jpg",
+              "src/assets/fruits/passion.jpg",
+              "src/assets/fruits/pomelo.jpg",
+              "src/assets/fruits/rambut.jpg",
+              "src/assets/fruits/star.jpg",
+              "src/assets/fruits/bg.jpg",
+
+              "src/assets/vegies/broadbean.jpg",
+              "src/assets/vegies/capsic.jpeg",
+              "src/assets/vegies/cassava.jpg",
+              "src/assets/vegies/celeric.jpeg",
+              "src/assets/vegies/chilli.jpeg",
+              "src/assets/vegies/gabbage.jpeg",
+              "src/assets/vegies/kohlrabi.jpg",
+              "src/assets/vegies/palmfruit.jpeg",
+              "src/assets/vegies/Romanesco.jpg",
+              "src/assets/vegies/salsify.jpg",
+              "src/assets/vegies/bg.jpg",
+
+              "src/assets/dairy-prod/butter.jpeg",
+              "src/assets/dairy-prod/casien.jpeg",
+              "src/assets/dairy-prod/cheese.jpg",
+              "src/assets/dairy-prod/clotted-cream.jpeg",
+              "src/assets/dairy-prod/cottage-cream.jpeg",
+              "src/assets/dairy-prod/cream-cheese.jpeg",
+              "src/assets/dairy-prod/ghee.jpeg",
+              "src/assets/dairy-prod/milk.jpeg",
+              "src/assets/dairy-prod/whey-protien.jpeg",
+              "src/assets/dairy-prod/yogurt.jpeg"
+
+
+            ],
+            "styles": [
+              "src/custom-theme.scss",
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "notes-portal:build:production"
+            },
+            "development": {
+              "buildTarget": "notes-portal:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "notes-portal:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  }
+}

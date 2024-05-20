@@ -1,0 +1,25 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,136 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&display=swap');
+*{
+  font-family:Bebas Neue;
+
+}
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+h1 {
+  font-family: Rubik Doodle Shadow;
+  letter-spacing: 0.5rem;
+  font-size: 250%
+
+
+}
+
+p {
+  letter-spacing: 0.2rem;
+ font-size: 140%;
+ line-height: 150%;
+ color: #333;
+}
+
+
+.title {
+  width: 70%;
+  padding: 5%;
+  border-radius: 5px;
+  background: #f6c99db3;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+/* #title {
+  background-image: url("https://picsum.photos/640/480");
+  z-index:2;
+}
+
+#title h1 {
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 50% 100%;
+
+ } */
+ /* img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+} */
+/* #title {
+  background-image: url("/src/assets/seedproject/4.png");
+  z-index:-1;
+}
+#slide1:before {
+  background-image: url("/src/assets/seedproject/5.png");
+  transform: translateZ(-1px) scale(2);
+}
+#slide2 {
+  background-image: url("/src/assets/seedproject/2.jpg");
+  z-index:2;
+}
+#slide3:before {
+  background-image: url("/src/assets/seedproject/2.jpg");
+  transform: translateZ(-1px) scale(2);
+} */
+
+#credits {
+  background: #222;
+}
+#slide1{
+  background-image: url("/assets/seeds/homepageBG.jpg");
+  width:100%;
+  height:400px;
+  background-size: cover;
+  background-position: center;
+}
+#slide2{
+  background-image: url("/assets/fruits/bg.jpg");
+  width:100%;
+  height:400px;
+  background-size: cover;
+  background-position: center;
+}
+#slide3{
+  background-image: url("/assets/vegies/bg.jpg");
+  width:100%;
+  height:400px;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  overflow: hidden;
+  color: #f2f2f2;
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  color: #f2f2f2;
+  margin: 0;
+}
+
+footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer a i {
+  color: #f2f2f2;
+  font-size: 16px;
+  vertical-align: middle;
+}
+

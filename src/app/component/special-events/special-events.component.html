@@ -1,0 +1,222 @@
+<!-- {{name}}
+<br><br><br><br><br><br><br>
+<hr>
+<hr>
+<hr>
+<hr>
+<label for="">Enter your name</label>
+<input type="text" [(ngModel)]="enteredname">
+<button type="button" >clickme</button>
+<h2>the entered value is  {{enteredname}}</h2>
+
+parrent to child interaction
+<label for="">Enter the parent name</label>
+<input type="text" [(ngModel)]="parentname">
+{{parentname}} -->
+
+<!-- <header>
+  <div class="container">
+    <div class="col-md-12 text-right">
+      <div class="cart_icon" >
+        <i routerLink="/register">
+
+          <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">3 12.1 19.5 23.6 19.5h688c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+        </i>
+        <div class="cart_value">
+          2
+        </div>
+      </div>
+    </div>
+  </div>
+</header>  -->
+
+<section class="product">
+  <div class="container text-center mt-5">
+    <div class="row ">
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/grape-seeds.jpeg" alt="none">
+            <div class="content">
+
+
+              <p>GRAPE SEEDS</p>
+              <!--<spah6><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg> 350</h6></span> -->
+              <button type="button" class="btn" id="buttonminus">ADD TO CART
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg> -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/apricot.jpg" alt="none">
+            <div class="content">
+
+
+              <p>APRICOT SEEDS</p>
+
+              <button type="button" class="btn" id="buttonminus">ADD TO CART
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/caraway-seed.jpg" alt="none">
+          </div>
+          <div class="content">
+
+            <!-- <button type="button" class="plus-minus-buttons" id="buttonplus">+
+
+               <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224h68c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288h600c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+            </button>-->
+              <p>CARAWAY SEEDS</p>
+            <!-- <span><h6><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg> 350</h6></span> -->
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg> -->
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/flax.jpg" alt="none">
+          </div>
+          <div class="content">
+            <div class="plus-minus-buttons"></div>
+            <!-- <button type="button" class="plus-minus-buttons" id="buttonplus">+
+
+               <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224h68c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288h600c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+            </button>-->
+              <p>FLAX SEEDS</p>          <!-- <span><h6><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg> 350</h6></span> -->
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg> -->
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/pumpkin.jpg" alt="none">
+          </div>
+          <div class="content">
+            <div class="plus-minus-buttons"></div>
+            <!-- <button type="button" class="plus-minus-buttons" id="buttonplus">+
+
+               <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224h68c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288h600c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+            </button>-->
+              <p>PUMPKIN SEEDS</p>
+            <!-- <span><h6><svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><path d="M0 64C0 46.3 14.3 32 32 32H96h16H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H231.8c9.6 14.4 16.7 30.6 20.7 48H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H252.4c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256h80c32.8 0 61-19.7 73.3-48H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H185.3C173 115.7 144.8 96 112 96H96 32C14.3 96 0 81.7 0 64z"/></svg> 350</h6></span> -->
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg> -->
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/seasame.jpg" alt="none">
+          </div>
+          <div class="content">
+            <div class="plus-minus-buttons"></div>
+            <p>SEASAME SEEDS</p>
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/grape-seeds.jpeg" alt="none">
+          </div>
+          <div class="content">
+
+            <p>FIG SEEDS</p>
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/sabja.jpg" alt="none">
+          </div>
+          <div class="content">
+
+                 <p>BASIL SEEDS</p>
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/rajgira.jpeg" alt="none">
+          </div>
+          <div class="content">
+
+                  <p>RAJGIRA SEEDS</p>
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/blackpepper.jpeg" alt="none">
+          </div>
+          <div class="content">
+
+            <p>BLACKPEPPER SEEDS</p>
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/sunflower.jpeg" alt="none">
+          </div>
+          <div class="content">
+
+
+              <p>SUNFLOWER SEEDS</p>
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="product-image ">
+            <img src="/assets/seeds/fig.jpeg" alt="none">
+          </div>
+          <div class="content">
+
+
+              <p>FIG SEEDS</p>
+
+            <button type="button" class="btn" id="buttonminus">ADD TO CART
+
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

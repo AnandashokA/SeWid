@@ -1,0 +1,10 @@
+navbar --> app.component
+sidebar --> sidebar.component
+home --> event.component
+seeds --> special-events.components
+plants saplets --> plant.components
+fruits --> fruits
+vegetables --> vegetables
+dairy products --> dairyproducts
+greens --> green.components
+mycart --> cart
